@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <title>My shop</title>
+</head>
+
+<body>
+    <header class="flexContainer">
+        <nav class="flexContainer">
+            <div id="LogoWrapper" class="flexContainer">
+                <div id="logo"><a href="#" title="Home"><img src="Images/Logo.png" alt="Logo" title="Logo"></a></div>
+                <ul id=ul1>
+                    <li><a href="#" title="Home">HOME</a></li>
+                    <li><a href="#" title="Shop">SHOP</a></li>
+                    <li><a href="#" title="Magazine">MAGAZINE</a></li>
+                </ul>
+            </div>
+            <div class="flexContainer" id="status">
+                <div id="basket"><a href="#" title="Panier"><img src="Images/Cart-Button.png" alt="Panier"
+                            title="Panier"></a></div>
+                <span id="login"><a href="#" title="Identifiants">LOGIN</a></span>
+                <div id="burger">
+                    <div class="bar" id="bar_1"></div>
+                    <div class="bar" id="bar_2"></div>
+                    <div class="bar" id="bar_3"></div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <form class="flexContainer" id="search" action="search.html">
+        <button type="submit" class="flexContainer" id="loupe"><img src="Images/Search.png" title="Recherche"></button>
+        <div class="flexContainer" id="searchContainer">
+           
+            <input type="text" placeholder="living room" name="s">
+            <div id="autoComp"></div>
+           
+            <div id="credit"><span>Powered by Algolia</span><img src="Images/Sajari-Logo.png" alt="Sajari"
+                    title="Sajari"></div>
+        </div>
+        <div class="flexContainer" id="sort">
+            <div id="match">Best match</div>
+            <div class="arrow"><img src="Images/down-arrow.svg" alt="Menu Deroulant" title="Menu Deroulant"></div>
+        </div>
+    </form>
+
+    <section>
+        <div class="container">
+           
+            <div class="flexContainer" id="articleWrapper">
+                <div class="flexContainer" id="dropDownMenu">
+                    <div id="filtersMobile">
+                        <div>Filters</div>
+                        <div id="arrow"><img src="Images/down-arrow.svg" alt="Menu Deroulant" title="Menu Deroulant"></div>
+                    </div>
+                    <h4>FILTER BY</h4>
+                    <ul id=ul2>
+                        <li>Collection <div class="arrow"><img src="Images/down-arrow.svg" alt="Menu Deroulant"
+                                    title="Menu Deroulant"></div>
+                        </li>
+                        <li>Color <div class="arrow"><img src="Images/down-arrow.svg" alt="Menu Deroulant"
+                                    title="Menu Deroulant"></div>
+                        </li>
+                        <li>Category <div class="arrow"><img src="Images/down-arrow.svg" alt="Menu Deroulant"
+                                    title="Menu Deroulant"></div>
+                        </li>
+                    </ul>
+                    <div id="priceRange">
+                        <span>Price Range</span>
+                        <div class="middle">
+                            <div class="multi-range-slider">
+                                <input type="range" id="input-left" min="0" max="100" value="0">
+                                <input type="range" id="input-right" min="0" max="100" value="100">
+    
+                                <div class="slider">
+                                    <div class="track"></div>
+                                    <div class="range"></div>
+                                    <div class="thumb left"></div>
+                                    <div class="thumb right"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="price">
+                            <div id="left">$0</div>
+                            <div id="right">$10,000+</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="article">
+                    <a href="Coombes.html" ><figure><img src="Images/01_Coombes.jpg" alt="Coombes" title="Coombes">
+                        <figcaption>
+                            <div>Coombes<br>$2,600</div>
+                        </figcaption>
+                    </figure></a>
+                    <div class="flexContainer d1">
+                        <div>Coombes</div>
+                        <div>$2,600</div>
+                    </div>
+                    <div class="flexContainer d2">
+                        <div>
+                            <div class="cat">LOUNGE</div>
+                            <div class="stars">
+                                <span class="star checked"><img src="Images/Star-On.png" alt="Note valide"
+                                        title="Note valide"></span>
+                                <span class="star checked"><img src="Images/Star-On.png" alt="Note valide"
+                                        title="Note valide"></span>
+                                <span class="star checked"><img src="Images/Star-On.png" alt="Note valide"
+                                        title="Note valide"></span>
+                                <span class="star checked"><img src="Images/Star-On.png" alt="Note valide"
+                                        title="Note valide"></span>
+                                <span class="star"><img src="Images/Star.png" alt="Note vide" title="Note vide"></span>
+                            </div>
+                        </div>
+                        <div class="CartAdd"><img src="Images/Cart_Add.png" alt="Ajoutez panier" title="Ajoutez panier"></div>
+                    </div>
+                </div>
+                <div class="article">
+                    <a href="articles.html" ><figure><img src="Images/02_Keeve.jpg" alt="Keeve" title="Keeve">
+                        <figcaption>
+                            <div>Keeve Set<br>$590</div>
+                        </figcaption>
+                    </figure></a>
+                    <div class="flexContainer d1">
+                        <div>Keeve Set</div>
+                        <div>$590</div>
+                    </div>
+                    <div class="flexContainer d2">
+                        <div>
+                            <div class="cat">TABLE & CHAIRS</div>
+                            <div class="stars">
+                                <span class="star checked"><img src="Images/Star-On.png" alt="Note valide"
+                                        title="Note valide"></span>
+                                <span class="star checked"><img src="Images/Star-On.png" alt="Note valide"
+                                        title="Note valide"></span>
+                                <span class="star checked"><img src="Images/Star-On.png" alt="Note valide"
+                                        title="Note valide"></span>
+                                <span class="star checked"><img src="Images/Star-On.png" alt="Note valide"
+                                        title="Note valide"></span>
+                                <span class="star"><img src="Images/Star.png" alt="Note vide" title="Note vide"></span>
+                            </div>
+                        </div>
+                        <div class="CartAdd"><img src="Images/Cart_Add.png" alt="Ajoutez panier" title="Ajoutez panier"></div>
+                    </div>
+                </div>
+                <div class="article">
+                    <a href="articles.html" ><figure><img src="Images/03_Nille.jpg" alt="Nille" title="Nille">
+                        <figcaption>
+                            <div>Nillè<br>$950</div>
+                        </figcaption>
+                    </figure></a>
+                    <div class="flexContainer d1">
+                        <div>Nillè</div>
+                        <div>$950</div>
+                    </div>
+                    <div class="flexContainer d2">
+                        <div>
+                            <div class="cat">ARMCHAIR</div>
+                            <div class="stars">
+                                <span class="star checked"><img src="Images/Star-On.png" alt="Note valide"
+                                        title="Note valide"></span>
+                                <span class="star checked"><img src="Images/Star-On.png" alt="Note valide"
+                                        title="Note valide"></span>
+                                <span class="star checked"><img src="Images/Star-On.png" alt="Note valide"
+                                        title="Note valide"></span>
+                                <span class="star checked"><img src="Images/Star-On.png" alt="Note valide"
+                                        title="Note valide"></span>
+                                <span class="star checked"><img src="Images/Star-On.png" alt="Note valide"
+                                        title="Note valide"></span>
+                            </div>
+                        </div>
+                        <div class="CartAdd"><img src="Images/Cart_Add.png" alt="Ajoutez panier" title="Ajoutez panier"></div>
+                    </div>
+                </div>
+                <div class="article">
+                    <a href="articles.html" ><figure><img src="Images/04_Blanko.jpg" alt="Blanko" title="Blanko">
+                        <figcaption>
+                            <div>Blanko<br>$90</div>
+                        </figcaption>
+                    </figure></a>
+                    <div class="flexContainer d1">
+                        <div>Blanko</div>
+                        <div>$90</div>
+                    </div>
+                    <div class="flexContainer d2">
+                        <div>
+                            <div class="cat">SIDE TABLE</div>
+                            <div class="stars">
+                                <span class="star checked"><img src="Images/Star-On.png" alt="Note valide"
+                                        title="Note valide"></span>
+                                <span class="star checked"><img src="Images/Star-On.png" alt="Note valide"
+                                        title="Note valide"></span>
+                                <span class="star checked"><img src="Images/Star-On.png" alt="Note valide"
+                                        title="Note valide"></span>
+                                <span class="star checked"><img src="Images/Star-On.png" alt="Note valide"
+                                        title="Note valide"></span>
+                                <span class="star"><img src="Images/Star.png" alt="Note vide" title="Note vide"></span>
+                            </div>
+                        </div>
+                        <div class="CartAdd"><img src="Images/Cart_Add.png" alt="Ajoutez panier" title="Ajoutez panier"></div>
+                    </div>
+                </div>
+                <div class="article">
+                    <a href="Coombes.html" ><figure><img src="Images/05_Momo.jpg" alt="Momo" title="Momo">
+                        <figcaption>
+                            <div>Momo<br>$890</div>
+                        </figcaption>
+                    </figure></a>
+                    <div class="flexContainer d1">
+                        <div>Momo</div>
+                        <div>$890</div>
+                    </div>
+                    <div class="flexContainer d2">
+                        <div>
+                            <div class="cat">SHELVES</div>
+                            <div class="stars">
+                                <span class="star checked"><img src="Images/Star-On.png" alt="Note valide"
+                                        title="Note valide"></span>
+                                <span class="star checked"><img src="Images/Star-On.png" alt="Note valide"
+                                        title="Note valide"></span>
+                                <span class="star checked"><img src="Images/Star-On.png" alt="Note valide"
+                                        title="Note valide"></span>
+                                <span class="star checked"><img src="Images/Star-On.png" alt="Note valide"
+                                        title="Note valide"></span>
+                                <span class="star"><img src="Images/Star.png" alt="Note vide" title="Note vide"></span>
+                            </div>
+                        </div>
+                        <div class="CartAdd"><img src="Images/Cart_Add.png" alt="Ajoutez panier" title="Ajoutez panier"></div>
+                    </div>
+                </div>
+                <div class="article">
+                    <a href="Coombes.html" ><figure><img src="Images/06_Penemille.jpg" alt="Penemille" title="Penemille">
+                        <figcaption>
+                            <div>Penemillè<br>$120</div>
+                        </figcaption>
+                    </figure></a>
+                    <div class="flexContainer d1">
+                        <div>Penemillè</div>
+                        <div>$120</div>
+                    </div>
+                    <div class="flexContainer d2">
+                        <div>
+                            <div class="cat">CHAIR</div>
+                            <div class="stars">
+                                <span class="star checked"><img src="Images/Star-On.png" alt="Note valide"
+                                        title="Note valide"></span>
+                                <span class="star checked"><img src="Images/Star-On.png" alt="Note valide"
+                                        title="Note valide"></span>
+                                <span class="star checked"><img src="Images/Star-On.png" alt="Note valide"
+                                        title="Note valide"></span>
+                                <span class="star checked"><img src="Images/Star-On.png" alt="Note valide"
+                                        title="Note valide"></span>
+                                <span class="star"><img src="Images/Star.png" alt="Note vide" title="Note vide"></span>
+                            </div>
+                        </div>
+                        <div class="CartAdd"><img src="Images/Cart_Add.png" alt="Ajoutez panier" title="Ajoutez panier"></div>
+                    </div>
+                </div>
+                <div class="article">
+                    <a href="Coombes.html" ><figure><img src="Images/07_Kappu.jpg" alt="Kappu" title="Kappu">
+                        <figcaption>
+                            <div>Kapu<br>$420</div>
+                        </figcaption>
+                    </figure></a>
+                    <div class="flexContainer d1">
+                        <div>Kappu</div>
+                        <div>$420</div>
+                    </div>
+                    <div class="flexContainer d2">
+                        <div>
+                            <div class="cat">SHELVES</div>
+                            <div class="stars">
+                                <span class="star checked"><img src="Images/Star-On.png" alt="Note valide"
+                                        title="Note valide"></span>
+                                <span class="star checked"><img src="Images/Star-On.png" alt="Note valide"
+                                        title="Note valide"></span>
+                                <span class="star checked"><img src="Images/Star-On.png" alt="Note valide"
+                                        title="Note valide"></span>
+                                <span class="star checked"><img src="Images/Star-On.png" alt="Note valide"
+                                        title="Note valide"></span>
+                                <span class="star"><img src="Images/Star.png" alt="Note vide" title="Note vide"></span>
+                            </div>
+                        </div>
+                        <div class="CartAdd"><img src="Images/Cart_Add.png" alt="Ajoutez panier" title="Ajoutez panier"></div>
+                    </div>
+                </div>
+            </div>
+               
+             
+        <div class="flexContainer numPages" id="numPagesDesktop">
+            <div class="current">1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div>10</div>
+            <div class="nextPage"><a href="#" title="Page suivante">&GT;</a></div>
+        </div>
+        <div class="flexContainer numPages" id="numPagesMobile">
+            <div class="current">1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div class="nextPage">&GT;</div>
+        </div>
+        
+        </div>
+      
+    </section>
+    <div id="logForm">
+        <div id="formulaire">
+            <div id="iconeFermer">
+                <img src="Images/Close.png" alt="Icone Fermer" title="Fermer">
+            </div>
+            <div id="Login">Login</div>
+            <div id="identifiant">
+                <input type="text" title="Identifiant" placeholder="Identifiant">
+            </div>
+            <div id="password">
+                <input type="password" title="Mot de passe" placeholder="Mot de passe">
+            </div>
+            <div id="verify">
+                <input type="checkbox"><span>Show Password</span>
+            </div>
+            <div id="valider" class="flexContainer">
+                <input type="submit" value="Valider" />
+            </div>
+            <div class="flexContainer" id="subformulaire">
+                <span id="oublie">Mot de passe oublié?</span>
+                <span id="inscription">Inscription</span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        var inputLeft = document.getElementById("input-left");
+        var inputRight = document.getElementById("input-right");
+
+        var thumbLeft = document.querySelector(".slider > .thumb.left");
+        var thumbRight = document.querySelector(".slider > .thumb.right");
+        var range = document.querySelector(".slider > .range");
+
+        function setLeftValue() {
+            var _this = inputLeft,
+                min = parseInt(_this.min),
+                max = parseInt(_this.max);
+
+            _this.value = Math.min(parseInt(_this.value), parseInt(inputRight.value) - 1);
+
+            var percent = ((_this.value - min) / (max - min)) * 100;
+
+            thumbLeft.style.left = percent + "%";
+            range.style.left = percent + "%";
+        }
+        setLeftValue();
+
+        function setRightValue() {
+            var _this = inputRight,
+                min = parseInt(_this.min),
+                max = parseInt(_this.max);
+
+            _this.value = Math.max(parseInt(_this.value), parseInt(inputLeft.value) + 1);
+
+            var percent = ((_this.value - min) / (max - min)) * 100;
+
+            thumbRight.style.right = (100 - percent) + "%";
+            range.style.right = (100 - percent) + "%";
+        }
+        setRightValue();
+
+        inputLeft.addEventListener("input", setLeftValue);
+        inputRight.addEventListener("input", setRightValue);
+
+        let search = document.querySelector('input');
+        let autoComp = document.querySelector('#autoComp');
+
+        search.onkeyup = (e) => {
+
+            let searchValue = e.target.value;
+
+            autoComp.innerHTML = searchValue;
+
+            autoComp.style.display = "flex";
+
+        }
+        
+        /*Display login form*/
+
+        let login = document.querySelector('#login');
+        let logForm = document.querySelector('#logForm');
+        login.onclick = function(){
+            logForm.style.display = "flex";
+        }
+        /*Close login form*/
+        let logoClose = document.querySelector('#iconeFermer img');
+        let valider = document.querySelector('#valider');
+        logoClose.onclick = function(){
+            logForm.style.display = "none";
+        }
+        valider.onclick = function(){
+            logForm.style.display = "none";
+        }
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="articles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <title>My shop</title>
+</head>
+
+<body>
+    <header class="flexContainer">
+        <nav class="flexContainer">
+            <div id="LogoWrapper" class="flexContainer">
+                <div id="logo"><a href="#" title="Home"><img src="Images/Logo.png" alt="Logo" title="Logo"></a></div>
+                <ul id=ul1>
+                    <li><a href="#" title="Home">HOME</a></li>
+                    <li><a href="#" title="Shop">SHOP</a></li>
+                    <li><a href="#" title="Magazine">MAGAZINE</a></li>
+                </ul>
+            </div>
+            <div class="flexContainer" id="status">
+                <div id="basket"><a href="#" title="Panier"><img src="Images/Cart-Button.png" alt="Panier"
+                            title="Panier"></a></div>
+                <span id="login"><a href="#" title="Identifiants">LOGIN</a></span>
+                <div id="burger">
+                    <div class="bar" id="bar_1"></div>
+                    <div class="bar" id="bar_2"></div>
+                    <div class="bar" id="bar_3"></div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+        <div class="article">
+            <figure><img src="Images/01_Coombes.jpg" alt="Coombes" title="Coombes">
+            </figure>
+            <div id="details">
+                <h2>Les essentiels</h2>
+                <h3>Origine de Fabrication : Europe</h3>
+                <h2>Description du produit</h2>
+                <h3>Réversible</h3>
+                <h3>Coffre de rangement</h3>
+                <p>Si vous recherchiez de la simplicité, de la fonctionnalité et du confort, alors vous êtes sur la
+                    bonne page! Avec ses lignes franches et son revêtement en tissu au toucher soft, ce canapé au côté
+                    d'angle réversible quatre places trouvera aisément sa place dans votre salon et s'adaptera à toutes
+                    les ambiances. Grâce à son garnissage généreux en mousse et ouate, il propose une assise confortable
+                    au rebond idéal. Pratique, son coffre de rangement intégré permet d'y stocker vos couettes, vos
+                    oreillers, votre linge de lit ou autres, pour un gain de place idéal. Sa structure en panneaux de
+                    particules, pin et contreplaqué montée sur son piètement en plastique noir assure une solidité
+                    parfaite et des finitions soignées.
+                    Pour une ambiance sobre, chic et cosy, glissez aussi à ses pieds le tapis SHAGGY STUDIO.
+                    Existe également en gris clair, turquoise, camel, marron, bordeaux et noir. </p>
+                <h2>Conseils d'utilisation</h2>
+                <p>Nos conseils:
+                    Toutes les deux semaines, dépoussiérez délicatement votre fauteuil à l'aide de la brosse souple de
+                    l'aspirateur sur puissance minimale. Pour éviter une usure trop rapide, n'exposez pas votre fauteuil
+                    à la lumière directe.
+                    Garantie 2 ans pièces</p>
+            </div>
+        </div>
+        <div class="flexContainer" id="articleWrapper">
+            <div class="flexContainer" id="dropDownMenu">
+
+                <h3>Coombes</h3>
+                <div class="flexContainer d2">
+                   
+                        <div class="cat"><a href="#details">Details</a></div>
+                        <div class="stars">
+                            <span class="star checked"><img src="Images/Star-On.png" alt="Note valide"
+                                    title="Note valide"></span>
+                            <span class="star checked"><img src="Images/Star-On.png" alt="Note valide"
+                                    title="Note valide"></span>
+                            <span class="star checked"><img src="Images/Star-On.png" alt="Note valide"
+                                    title="Note valide"></span>
+                            <span class="star checked"><img src="Images/Star-On.png" alt="Note valide"
+                                    title="Note valide"></span>
+                            <span class="star"><img src="Images/Star.png" alt="Note vide" title="Note vide"></span>
+                        </div>
+                </div>
+                   
+                <ul id=ul2>
+                    <li>Color <div class="arrow"><img src="Images/down-arrow.svg" alt="Menu Deroulant"
+                                title="Menu Deroulant"></div>
+                    </li>
+                    <li>Taille <div class="arrow"><img src="Images/down-arrow.svg" alt="Menu Deroulant"
+                                title="Menu Deroulant"></div>
+                    </li>
+                    <li>Quantité <div class="arrow"><img src="Images/down-arrow.svg" alt="Menu Deroulant"
+                                title="Menu Deroulant"></div>
+                    </li>
+                </ul>
+            </div>
+    
+        </div>
+    </section>
+
+    <script>
+
+        /*Display login form*/
+    
+        let login = document.querySelector('#login');
+        let logForm = document.querySelector('#logForm');
+        login.onclick = function () {
+            logForm.style.display = "flex";
+        }
+        /*Close login form*/
+        let logoClose = document.querySelector('#iconeFermer img');
+        let valider = document.querySelector('#valider');
+        logoClose.onclick = function () {
+            logForm.style.display = "none";
+        }
+        valider.onclick = function () {
+            logForm.style.display = "none";
+        }
+    
+    </script>
+
+</body>
+
+</html>
